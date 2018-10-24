@@ -1,7 +1,9 @@
 document.addEventListener("DOMContentLoaded", function(event) {
     function handleBackspace(e) {
         if (e.keyCode === 8 && !e.ctrlKey && !e.shiftKey
-            && e.target.tagName !== 'INPUT' && e.target.tagName !== 'TEXTAREA') {
+            && e.target.tagName !== 'INPUT' && e.target.tagName !== 'TEXTAREA'
+            && e.target.contentEditable !== 'true' // TinyMCE
+            ) {
             e.preventDefault();
             window.history.go(-1);
         }

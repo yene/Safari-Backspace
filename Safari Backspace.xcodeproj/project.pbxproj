@@ -11,7 +11,38 @@
 		ACEBD69B2178DFC60051E5E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACEBD69A2178DFC60051E5E6 /* Assets.xcassets */; };
 		ACEBD69E2178DFC60051E5E6 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACEBD69C2178DFC60051E5E6 /* MainMenu.xib */; };
 		ACEBD6A12178DFC60051E5E6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEBD6A02178DFC60051E5E6 /* main.m */; };
+		ACEBD6AF2178DFDB0051E5E6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACEBD6AE2178DFDB0051E5E6 /* Cocoa.framework */; };
+		ACEBD6B32178DFDB0051E5E6 /* SafariExtensionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEBD6B22178DFDB0051E5E6 /* SafariExtensionHandler.m */; };
+		ACEBD6B62178DFDB0051E5E6 /* SafariExtensionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEBD6B52178DFDB0051E5E6 /* SafariExtensionViewController.m */; };
+		ACEBD6B92178DFDB0051E5E6 /* SafariExtensionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACEBD6B72178DFDB0051E5E6 /* SafariExtensionViewController.xib */; };
+		ACEBD6BC2178DFDB0051E5E6 /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = ACEBD6BB2178DFDB0051E5E6 /* script.js */; };
+		ACEBD6BE2178DFDB0051E5E6 /* ToolbarItemIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = ACEBD6BD2178DFDB0051E5E6 /* ToolbarItemIcon.pdf */; };
+		ACEBD6C22178DFDB0051E5E6 /* Backspace.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = ACEBD6AC2178DFDB0051E5E6 /* Backspace.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ACEBD6C02178DFDB0051E5E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ACEBD68C2178DFC50051E5E6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ACEBD6AB2178DFDB0051E5E6;
+			remoteInfo = Extension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		ACEBD6C62178DFDB0051E5E6 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				ACEBD6C22178DFDB0051E5E6 /* Backspace.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		ACEBD6942178DFC50051E5E6 /* Safari Backspace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Safari Backspace.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +53,17 @@
 		ACEBD69F2178DFC60051E5E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACEBD6A02178DFC60051E5E6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ACEBD6A22178DFC60051E5E6 /* Safari_Backspace.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Safari_Backspace.entitlements; sourceTree = "<group>"; };
+		ACEBD6AC2178DFDB0051E5E6 /* Backspace.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Backspace.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACEBD6AE2178DFDB0051E5E6 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		ACEBD6B12178DFDB0051E5E6 /* SafariExtensionHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SafariExtensionHandler.h; sourceTree = "<group>"; };
+		ACEBD6B22178DFDB0051E5E6 /* SafariExtensionHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SafariExtensionHandler.m; sourceTree = "<group>"; };
+		ACEBD6B42178DFDB0051E5E6 /* SafariExtensionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SafariExtensionViewController.h; sourceTree = "<group>"; };
+		ACEBD6B52178DFDB0051E5E6 /* SafariExtensionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SafariExtensionViewController.m; sourceTree = "<group>"; };
+		ACEBD6B82178DFDB0051E5E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SafariExtensionViewController.xib; sourceTree = "<group>"; };
+		ACEBD6BA2178DFDB0051E5E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACEBD6BB2178DFDB0051E5E6 /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
+		ACEBD6BD2178DFDB0051E5E6 /* ToolbarItemIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ToolbarItemIcon.pdf; sourceTree = "<group>"; };
+		ACEBD6BF2178DFDB0051E5E6 /* Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Extension.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +74,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ACEBD6A92178DFDB0051E5E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACEBD6AF2178DFDB0051E5E6 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -39,6 +89,8 @@
 			isa = PBXGroup;
 			children = (
 				ACEBD6962178DFC50051E5E6 /* Safari Backspace */,
+				ACEBD6B02178DFDB0051E5E6 /* Extension */,
+				ACEBD6AD2178DFDB0051E5E6 /* Frameworks */,
 				ACEBD6952178DFC50051E5E6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				ACEBD6942178DFC50051E5E6 /* Safari Backspace.app */,
+				ACEBD6AC2178DFDB0051E5E6 /* Backspace.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,6 +118,30 @@
 			path = "Safari Backspace";
 			sourceTree = "<group>";
 		};
+		ACEBD6AD2178DFDB0051E5E6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ACEBD6AE2178DFDB0051E5E6 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ACEBD6B02178DFDB0051E5E6 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				ACEBD6B12178DFDB0051E5E6 /* SafariExtensionHandler.h */,
+				ACEBD6B22178DFDB0051E5E6 /* SafariExtensionHandler.m */,
+				ACEBD6B42178DFDB0051E5E6 /* SafariExtensionViewController.h */,
+				ACEBD6B52178DFDB0051E5E6 /* SafariExtensionViewController.m */,
+				ACEBD6B72178DFDB0051E5E6 /* SafariExtensionViewController.xib */,
+				ACEBD6BA2178DFDB0051E5E6 /* Info.plist */,
+				ACEBD6BB2178DFDB0051E5E6 /* script.js */,
+				ACEBD6BD2178DFDB0051E5E6 /* ToolbarItemIcon.pdf */,
+				ACEBD6BF2178DFDB0051E5E6 /* Extension.entitlements */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -75,15 +152,34 @@
 				ACEBD6902178DFC50051E5E6 /* Sources */,
 				ACEBD6912178DFC50051E5E6 /* Frameworks */,
 				ACEBD6922178DFC50051E5E6 /* Resources */,
+				ACEBD6C62178DFDB0051E5E6 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				ACEBD6C12178DFDB0051E5E6 /* PBXTargetDependency */,
 			);
 			name = "Safari Backspace";
 			productName = "Safari Backspace";
 			productReference = ACEBD6942178DFC50051E5E6 /* Safari Backspace.app */;
 			productType = "com.apple.product-type.application";
+		};
+		ACEBD6AB2178DFDB0051E5E6 /* Backspace */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACEBD6C32178DFDB0051E5E6 /* Build configuration list for PBXNativeTarget "Backspace" */;
+			buildPhases = (
+				ACEBD6A82178DFDB0051E5E6 /* Sources */,
+				ACEBD6A92178DFDB0051E5E6 /* Frameworks */,
+				ACEBD6AA2178DFDB0051E5E6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Backspace;
+			productName = Extension;
+			productReference = ACEBD6AC2178DFDB0051E5E6 /* Backspace.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -95,6 +191,9 @@
 				ORGANIZATIONNAME = "Yannick Weiss";
 				TargetAttributes = {
 					ACEBD6932178DFC50051E5E6 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					ACEBD6AB2178DFDB0051E5E6 = {
 						CreatedOnToolsVersion = 10.0;
 					};
 				};
@@ -113,6 +212,7 @@
 			projectRoot = "";
 			targets = (
 				ACEBD6932178DFC50051E5E6 /* Safari Backspace */,
+				ACEBD6AB2178DFDB0051E5E6 /* Backspace */,
 			);
 		};
 /* End PBXProject section */
@@ -124,6 +224,16 @@
 			files = (
 				ACEBD69B2178DFC60051E5E6 /* Assets.xcassets in Resources */,
 				ACEBD69E2178DFC60051E5E6 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACEBD6AA2178DFDB0051E5E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACEBD6BE2178DFDB0051E5E6 /* ToolbarItemIcon.pdf in Resources */,
+				ACEBD6B92178DFDB0051E5E6 /* SafariExtensionViewController.xib in Resources */,
+				ACEBD6BC2178DFDB0051E5E6 /* script.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,7 +249,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ACEBD6A82178DFDB0051E5E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACEBD6B62178DFDB0051E5E6 /* SafariExtensionViewController.m in Sources */,
+				ACEBD6B32178DFDB0051E5E6 /* SafariExtensionHandler.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ACEBD6C12178DFDB0051E5E6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ACEBD6AB2178DFDB0051E5E6 /* Backspace */;
+			targetProxy = ACEBD6C02178DFDB0051E5E6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		ACEBD69C2178DFC60051E5E6 /* MainMenu.xib */ = {
@@ -148,6 +275,14 @@
 				ACEBD69D2178DFC60051E5E6 /* Base */,
 			);
 			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		ACEBD6B72178DFDB0051E5E6 /* SafariExtensionViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ACEBD6B82178DFDB0051E5E6 /* Base */,
+			);
+			name = SafariExtensionViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -317,6 +452,15 @@
 			buildConfigurations = (
 				ACEBD6A62178DFC60051E5E6 /* Debug */,
 				ACEBD6A72178DFC60051E5E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACEBD6C32178DFDB0051E5E6 /* Build configuration list for PBXNativeTarget "Backspace" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACEBD6C42178DFDB0051E5E6 /* Debug */,
+				ACEBD6C52178DFDB0051E5E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
