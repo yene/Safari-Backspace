@@ -2,6 +2,9 @@
 
 Because macOS Mojave removed the Backspace.
 
+
+[Download Safari.Backspace.app.zip](https://github.com/yene/Safari-Backspace/releases/download/v1.0/Safari.Backspace.app.zip)
+
 ## The injected script
 ```javascript
 function handleBackspace(e) {
