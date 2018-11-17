@@ -45,6 +45,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AC4C579B21A09EBC00B2F5A0 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		ACEBD6942178DFC50051E5E6 /* Safari Backspace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Safari Backspace.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACEBD6972178DFC50051E5E6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		ACEBD6982178DFC50051E5E6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -88,6 +89,7 @@
 		ACEBD68B2178DFC50051E5E6 = {
 			isa = PBXGroup;
 			children = (
+				AC4C579B21A09EBC00B2F5A0 /* README.md */,
 				ACEBD6962178DFC50051E5E6 /* Safari Backspace */,
 				ACEBD6B02178DFDB0051E5E6 /* Extension */,
 				ACEBD6AD2178DFDB0051E5E6 /* Frameworks */,
@@ -432,6 +434,42 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yannickweiss.Safari-Backspace";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		ACEBD6C42178DFDB0051E5E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Extension/Extension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NDJHDNKXD6;
+				INFOPLIST_FILE = Extension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yannickweiss.Safari-Backspace.Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		ACEBD6C52178DFDB0051E5E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Extension/Extension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NDJHDNKXD6;
+				INFOPLIST_FILE = Extension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yannickweiss.Safari-Backspace.Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};

@@ -20,10 +20,6 @@ window.addEventListener('keydown', handleBackspace, false);
 
 ```
 
-## Paranoid People 🙈
-I am recording your text inputs and send it to my servers, so I can laugh about your spelling mistakes.
-
-You can find the scripts in the release by inspecting the package contents. 
-
-`open Safari\ Backspace.app/Contents/PlugIns/Backspace.appex/Contents/Resources/`
-
+## Material and Notes
+*  [Safari App Extensions](https://developer.apple.com/documentation/safariservices/safari_app_extensions)
+* Extension does not show up in list. -> It has to be signed.
