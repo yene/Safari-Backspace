@@ -2,8 +2,11 @@
 
 Because macOS Mojave removed the Backspace.
 
-
 [Download Safari.Backspace.app.zip](https://github.com/yene/Safari-Backspace/releases/download/v1.0/Safari.Backspace.app.zip)
+
+## Alternative with a Keyboard Shortcut
+You can add a keyboard shortcut from the terminal but it requires to [disable system integrity](https://www.imore.com/how-turn-system-integrity-protection-macos).
+`defaults write com.apple.Safari NSUserKeyEquivalents -dict-add Back "\U232b"` 
 
 ## The injected script
 ```javascript
