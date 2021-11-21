@@ -9,7 +9,7 @@ You can add a keyboard shortcut from the terminal but it requires to [disable sy
 `defaults write com.apple.Safari NSUserKeyEquivalents -dict-add Back "\U232b"` 
 
 ## The injected script
-https://github.com/yene/Safari-Backspace/blob/master/Extension/script.js
+https://github.com/yene/Safari-Backspace/blob/master/Extension/backspace-script.js
 
 ## Material and Notes
 *  [Safari App Extensions](https://developer.apple.com/documentation/safariservices/safari_app_extensions)

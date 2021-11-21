@@ -1,3 +1,7 @@
+/*
+ * Safari Backspace Extension
+ */
+
 document.addEventListener("DOMContentLoaded", function (event) {
     function handleBackspace(e) {
         if (e.keyCode === 8 && !e.shiftKey && !e.ctrlKey

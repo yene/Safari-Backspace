@@ -15,7 +15,7 @@
 		ACEBD6B32178DFDB0051E5E6 /* SafariExtensionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEBD6B22178DFDB0051E5E6 /* SafariExtensionHandler.m */; };
 		ACEBD6B62178DFDB0051E5E6 /* SafariExtensionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEBD6B52178DFDB0051E5E6 /* SafariExtensionViewController.m */; };
 		ACEBD6B92178DFDB0051E5E6 /* SafariExtensionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACEBD6B72178DFDB0051E5E6 /* SafariExtensionViewController.xib */; };
-		ACEBD6BC2178DFDB0051E5E6 /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = ACEBD6BB2178DFDB0051E5E6 /* script.js */; };
+		ACEBD6BC2178DFDB0051E5E6 /* backspace-script.js in Resources */ = {isa = PBXBuildFile; fileRef = ACEBD6BB2178DFDB0051E5E6 /* backspace-script.js */; };
 		ACEBD6BE2178DFDB0051E5E6 /* ToolbarItemIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = ACEBD6BD2178DFDB0051E5E6 /* ToolbarItemIcon.pdf */; };
 		ACEBD6C22178DFDB0051E5E6 /* Backspace.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = ACEBD6AC2178DFDB0051E5E6 /* Backspace.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -62,7 +62,7 @@
 		ACEBD6B52178DFDB0051E5E6 /* SafariExtensionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SafariExtensionViewController.m; sourceTree = "<group>"; };
 		ACEBD6B82178DFDB0051E5E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SafariExtensionViewController.xib; sourceTree = "<group>"; };
 		ACEBD6BA2178DFDB0051E5E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ACEBD6BB2178DFDB0051E5E6 /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
+		ACEBD6BB2178DFDB0051E5E6 /* backspace-script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "backspace-script.js"; sourceTree = "<group>"; };
 		ACEBD6BD2178DFDB0051E5E6 /* ToolbarItemIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ToolbarItemIcon.pdf; sourceTree = "<group>"; };
 		ACEBD6BF2178DFDB0051E5E6 /* Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Extension.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -137,7 +137,7 @@
 				ACEBD6B52178DFDB0051E5E6 /* SafariExtensionViewController.m */,
 				ACEBD6B72178DFDB0051E5E6 /* SafariExtensionViewController.xib */,
 				ACEBD6BA2178DFDB0051E5E6 /* Info.plist */,
-				ACEBD6BB2178DFDB0051E5E6 /* script.js */,
+				ACEBD6BB2178DFDB0051E5E6 /* backspace-script.js */,
 				ACEBD6BD2178DFDB0051E5E6 /* ToolbarItemIcon.pdf */,
 				ACEBD6BF2178DFDB0051E5E6 /* Extension.entitlements */,
 			);
@@ -235,7 +235,7 @@
 			files = (
 				ACEBD6BE2178DFDB0051E5E6 /* ToolbarItemIcon.pdf in Resources */,
 				ACEBD6B92178DFDB0051E5E6 /* SafariExtensionViewController.xib in Resources */,
-				ACEBD6BC2178DFDB0051E5E6 /* script.js in Resources */,
+				ACEBD6BC2178DFDB0051E5E6 /* backspace-script.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,7 +341,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -394,7 +394,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
