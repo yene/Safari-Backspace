@@ -3,19 +3,30 @@
  */
 
 document.addEventListener("DOMContentLoaded", function (event) {
+    let outmostTags = ['HTML', 'BODY', 'MAIN']
+    let ignoreTags = ['INPUT', 'TEXTAREA']
+
     function handleBackspace(e) {
-        if (e.keyCode === 8 && !e.shiftKey && !e.ctrlKey
-            && e.target.tagName !== 'INPUT' && e.target.tagName !== 'TEXTAREA'
+//        if (e.keyCode === 8 && !e.ctrlKey && e.target.contentEditable !== 'true' && !ignoreTags.includes(e.target.tagName)) {
+//            console.log(e.target.tagName, e.target.shadowRoot)
+//        }
+
+        if (e.keyCode === 8 && !e.shiftKey 
+            && !e.ctrlKey
+            && !ignoreTags.includes(e.target.tagName)
             && e.target.contentEditable !== 'true' // TinyMCE
+            && e.target.shadowRoot == null
         ) {
             e.preventDefault();
-            window.history.go(-1);
-        } else if (e.keyCode === 8 && e.shiftKey && !e.ctrlKey
-            && e.target.tagName !== 'INPUT' && e.target.tagName !== 'TEXTAREA'
+            window.history.go(-1); // backward
+        } else if (e.keyCode === 8 && e.shiftKey
+            && !e.ctrlKey
+            && !ignoreTags.includes(e.target.tagName)
             && e.target.contentEditable !== 'true' // TinyMCE
+            && e.target.shadowRoot == null
         ) {
             e.preventDefault();
-            window.history.go(1);
+            window.history.go(1); // forward
         }
     }
     window.addEventListener('keydown', handleBackspace, false);
