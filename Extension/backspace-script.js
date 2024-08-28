@@ -14,7 +14,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
         if (e.keyCode === 8 && !e.shiftKey 
             && !e.ctrlKey
             && !ignoreTags.includes(e.target.tagName)
-            && e.target.contentEditable !== 'true' // TinyMCE
+            && e.target.contentEditable !== 'true'
+            && e.target.contentEditable !== 'plaintext-only'
             && e.target.shadowRoot == null
         ) {
             e.preventDefault();
@@ -22,7 +23,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
         } else if (e.keyCode === 8 && e.shiftKey
             && !e.ctrlKey
             && !ignoreTags.includes(e.target.tagName)
-            && e.target.contentEditable !== 'true' // TinyMCE
+            && e.target.contentEditable !== 'true'
+            && e.target.contentEditable !== 'plaintext-only'
             && e.target.shadowRoot == null
         ) {
             e.preventDefault();

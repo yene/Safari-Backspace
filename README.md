@@ -1,13 +1,16 @@
 # Safari Backspace
 
-Because macOS Mojave removed the Backspace.
+> [!NOTE]  
+> This extension is not needed anymore you can enable backspace with the command below
 
-## Backspace Keyboard Shortcut
-In macOS Sonoma you can change the Back shortcut to Backspace again:
+## Enable Backspace Keyboard Shortcut
+In macOS you can enable Safari Backspace with:
 `defaults write com.apple.Safari NSUserKeyEquivalents -dict-add Back "\U232b"` 
 
 Remove the change with:
 `defaults delete com.apple.Safari NSUserKeyEquivalents`
+
+# Notes about the Extension
 
 ## The injected script
 https://github.com/yene/Safari-Backspace/blob/master/Extension/backspace-script.js
